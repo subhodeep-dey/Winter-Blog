@@ -131,3 +131,6 @@ dist
 
 # Misc
 private_file.txt
+
+# Build folder
+build/
