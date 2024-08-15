@@ -2,6 +2,8 @@
   "name": "frontend-winter-blog",
   "version": "1.0.0",
   "description": "Backend for Winter-Blog",
+  "proxy": "https://winter-blog-backend.vercel.app/",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git@github.com:subhodeep-dey/Winter-Blog.git"
