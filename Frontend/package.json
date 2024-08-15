@@ -36,7 +36,6 @@
   "scripts": {
     "update-proxy": "node updatePackageJson.js",
     "start": "npm run update-proxy && react-scripts start",
-    "build": "npm run update-proxy && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
