@@ -5,10 +5,9 @@ require('dotenv').config();
 
 module.exports.getConfig = () => {
     const config = {
-        'MODE': 'Development',
+        'MODE': 'Production',
         'PORT': process.env.PORT || 5000,
-        'MONGO_URL': process.env.MONGODB_URI,
-        'UPLOAD_PATH': path.resolve( `${__dirname }/../uploads` ),
+        'MONGODB_URL': process.env.MONGODB_URI,
         'JWT_SECRET': process.env.JWT_SECRET || 'R4ND0M5TR1NG'
     };
 

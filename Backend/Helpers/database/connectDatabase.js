@@ -4,7 +4,7 @@ const config = require('./config').getConfig();
 // Mongo Connection Class
 class Connection {
     constructor() {
-        const url = config.MONGO_URL;
+        const url = config.MONGODB_URL;
 
         mongoose.Promise = global.Promise;
 
