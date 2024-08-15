@@ -4,12 +4,10 @@ const cors = require("cors")
 const path = require("path")
 
 const IndexRoute = require("./Routers/index")
-const connectDatabase = require("./Helpers/database/connectDatabase")
+const dbConnection = require("./Helpers/database/connectDatabase");
 const customErrorHandler = require("./Middlewares/Errors/customErrorHandler")
 
 require('dotenv').config();
-
-connectDatabase()
 
 const app = express() ;
 

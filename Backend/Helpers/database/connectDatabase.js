@@ -1,14 +1,29 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
+const config = require('./config').getConfig();
 
-mongoose.set('strictQuery', true);
+// Mongo Connection Class
+class Connection {
+    constructor() {
+        const url = config.MONGO_URL;
 
-const connectDatabase = async () => {
-    await mongoose.connect(process.env.MONGO_URI, {
-        useUnifiedTopology: true,
-        useNewUrlParser: true,
-        serverSelectionTimeoutMS: 5000,
-    });
-    console.log("MongoDB Connection Successfully");
+        mongoose.Promise = global.Promise;
+
+        this.connect(url).then(() => {
+            console.log('✔ Database Connected');
+        }).catch((err) => {
+            console.error('✘ MONGODB ERROR: ', err.message);
+        });
+    }
+
+    async connect(url) {
+        try {
+            await mongoose.connect(url);
+        } catch (e) {
+            throw e;
+        }
+    }
 }
 
-module.exports = connectDatabase;
+module.exports = new Connection();
+
+// module.exports = connectDatabase;
