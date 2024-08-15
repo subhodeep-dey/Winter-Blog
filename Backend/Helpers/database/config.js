@@ -7,7 +7,7 @@ module.exports.getConfig = () => {
     const config = {
         'MODE': 'Development',
         'PORT': process.env.PORT || 5000,
-        'MONGO_URL': process.env.MONGO_URI,
+        'MONGO_URL': process.env.MONGODB_URI,
         'UPLOAD_PATH': path.resolve( `${__dirname }/../uploads` ),
         'JWT_SECRET': process.env.JWT_SECRET || 'R4ND0M5TR1NG'
     };
