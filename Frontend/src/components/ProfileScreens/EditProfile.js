@@ -119,7 +119,7 @@ const EditProfile = () => {
                         <div class="absolute">
                             Currently Image
                         </div>
-                        <img src={`http://localhost:5001/userPhotos/${previousPhoto}`} alt="userPhoto" />
+                        <img src={`${process.env.REACT_APP_BACKEND_URL}/userPhotos/${previousPhoto}`} alt="userPhoto" />
                     </div>
 
                 </div>
