@@ -2,6 +2,7 @@
   "name": "frontend-winter-blog",
   "version": "1.0.0",
   "description": "Backend for Winter-Blog",
+  "proxy": "https://winter-blog-backend.vercel.app/",
   "private": true,
   "repository": {
     "type": "git",
@@ -30,12 +31,13 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.14.5",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "update-proxy": "node updatePackageJson.js",
-    "start": "npm run update-proxy && react-scripts start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -56,6 +58,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:5001/"
+  }
 }
