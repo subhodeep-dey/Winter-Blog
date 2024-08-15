@@ -131,6 +131,7 @@ dist
 
 # Misc
 private_file.txt
+package-lock.json
 
 # Build folder
 build/
