@@ -1,0 +1,64 @@
+src/
+│
+├── assets/
+│   ├── images/
+│   └── logo.svg
+│
+├── components/
+│   ├── Button.js
+│   ├── Navbar.js
+│   └── Footer.js
+│
+├── containers/
+│   ├── HomeContainer.js
+│   ├── BlogContainer.js
+│   └── APIRoutes.js
+│
+├── pages/
+│   ├── HomePage.js
+│   ├── BlogPage.js
+│   └── AboutPage.js
+│
+├── utils/
+│   ├── api.js
+│   └── formatDate.js
+│
+├── App.js
+├── App.css
+├── index.js
+└── index.css
+
+1. assets
+Purpose: Store static assets like images, icons, logos, and any other media files.
+Example Files: logo.svg, images, icons
+
+2. components
+Purpose: Store reusable UI components that can be used throughout the application.
+Example Files:
+Button Component: Button.js - A reusable button component.
+Navigation Bar: Navbar.js - Code for the navigation bar.
+Footer Bar: Footer.js - Code for the footer bar.
+
+3. containers
+Purpose: Store components that manage state or contain business logic, often serving as a bridge between your components and the data layer.
+Example Files:
+Page Containers: HomeContainer.js, BlogContainer.js - Containers that fetch data and pass it down to presentational components.
+API Routing: APIRoutes.js - Define and manage API calls here.
+
+4. pages
+Purpose: Store components that represent full pages or views in your application.
+Example Files:
+Home Page: HomePage.js - The home page layout and content.
+Blog Page: BlogPage.js - The blog listing or individual blog page layout.
+About Page: AboutPage.js - Any other static page like "About Us."
+
+5. utils
+Purpose: Store utility functions, helpers, and any code that is reused across multiple components or containers.
+Example Files:
+API Helpers: api.js - Functions for making API requests.
+Utility Functions: formatDate.js - A utility function to format dates.
+
+Global Files:
+App.js: Main application component that sets up routing and wraps the app with providers if needed.
+index.js: Entry point of the React application.
+App.css/index.css: Global styling for the application.
